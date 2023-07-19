@@ -9,20 +9,35 @@ import java.time.LocalDateTime;
 public class Business {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "phone")
     private String phone;
+    @Column(name = "rating")
     private Double rating;
+    @Column(name = "reviewCount")
     private Integer reviewCount;
+    @Column(name = "price")
     private String price;
+    @Column(name = "imageUrl")
     private String imageUrl;
+    @Column(name = "url")
     private String url;
+    @Column(name = "location")
     private String location;
+    @Column(name = "latitude")
     private Double latitude;
+    @Column(name = "longitude")
     private Double longitude;
+    @Column(name = "createdAt")
     private LocalDateTime createdAt;
+    @Column(name = "updatedAt")
     private LocalDateTime updatedAt;
+    @Column(name = "term")
     private String term;
+    @Column(name = "category")
     private String category;
 
     public Long getId() {

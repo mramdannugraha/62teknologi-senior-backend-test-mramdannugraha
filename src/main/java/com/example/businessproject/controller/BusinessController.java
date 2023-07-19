@@ -73,8 +73,8 @@ public class BusinessController {
             @RequestParam(required = false) String catergory,
                 @RequestParam(required = false) String term
     ) {
-        //List<Business> businesses = businessService.findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit( location, term, lat,longitude, catergory);
-        List<Business> businesses = businessService.findAll();
+        List<Business> businesses = businessService.findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit( location, term, lat,longitude, catergory);
+        //List<Business> businesses = businessService.findAll();
         return ResponseEntity.ok(businesses);
     }
 }

@@ -16,10 +16,10 @@ public class BusinessService {
         this.businessRepository = businessRepository;
     }
 
-  /* public List<Business> findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit(
+   public List<Business> findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit(
            String location, String term, Double lat,Double longitude, String catergory) {
-        return businessRepository.findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit( location);
-    }*/
+        return businessRepository.findByLocaleContainingIgnoreCaseAndLocationContainingIgnoreCaseAndTermContainingIgnoreCaseAndLimit( location,term, lat, longitude,catergory);
+    }
 
     public Optional<Business> findById(Long id) {
         return businessRepository.findById(id);
